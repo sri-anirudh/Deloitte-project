@@ -43,3 +43,23 @@ regression_data$Currency.Key <- as.factor(regression_data$Currency.Key)
 
 # Fit linear regression model
 model <- lm(GR_delay_log ~ ., data = regression_data)
+
+
+
+install.packages("tidyverse")  # Comprehensive set of packages for data science
+install.packages("ggplot2")     # Data visualization
+install.packages("dplyr")       # Data manipulation
+install.packages("readr")       # Data import
+install.packages("caret")       # Machine learning toolkit
+install.packages("lubridate")   # Date and time handling
+install.packages("tidyr")       # Data tidying
+install.packages("stringr")     # String manipulation
+install.packages("rpart")       # Recursive partitioning for decision trees
+install.packages("randomForest")# Random Forest algorithm
+install.packages("readxl")        # For reading Excel files
+install.packages("readr")         # For reading CSV files
+install.packages("ggplot2")       # Data visualization
+install.packages("caret")         # Machine learning toolkit
+install.packages("corrplot")      # Visualization of correlation matrices
+install.packages("pROC")          # Tools for ROC curve analysis
+install.packages("e1071")         # Functions for evaluating accuracy, including confusion matrices
