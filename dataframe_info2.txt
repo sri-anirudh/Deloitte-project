@@ -1,0 +1,248 @@
+
+
+DataFrame Name: purchasing_document_header_df
+Columns:
+Date on Which Record Was Created: datetime64[ns]
+Deadline for Submission of Bid/Quotation: float64
+Purchasing Document Date: datetime64[ns]
+Binding Period for Quotation: float64
+Purchasing Document Type: object
+Purchasing Document Category: object
+Company Code: object
+Closing Date for Applications: float64
+Due Date for Down Payment: float64
+Purchasing Document Number: int64
+Purchasing Group: object
+Purchasing Organization: object
+Delivery Date Header: All Items Have Same Delivery Date: float64
+Name of Person who Created the Object: object
+Warranty Date: float64
+Quotation Submission Date: datetime64[ns]
+Start of Validity Period: datetime64[ns]
+End of Validity Period: datetime64[ns]
+Vendor Account Number: object
+Client: int64
+Release Date of Contract: float64
+Status of Purchasing Document: object
+Currency Key: object
+Exchange Rate: float64
+
+DataFrame Name: vendor_master_purchasing_org_df
+Columns:
+Client: int64
+Vendor Account Number: object
+Purchasing Organization: object
+Date on Which Record Was Created: datetime64[ns]
+
+DataFrame Name: purchasing_document_item_df
+Columns:
+Reconciliation Date for Agreed Cumulative Quantity: datetime64[ns]
+Purchase Requisition Number: float64
+Item Number of Purchase Requisition: int64
+Purchasing Document Category: object
+Company Code: object
+Purchasing Document Number: int64
+Item Number of Purchasing Document: int64
+Account Assignment Category: object
+Number of Principal Purchase Agreement: float64
+Target Quantity: int64
+Item Number of Principal Purchase Agreement: int64
+Storage Location: float64
+Client: int64
+Material Group: object
+Material Number: object
+Purchase Order Unit of Measure: object
+Net Price in Purchasing Document (in Document Currency): float64
+Net Order Value in PO Currency: float64
+Next JIT Delivery Schedule Transmission: float64
+Next Forecast Delivery Schedule Transmission: float64
+Price Unit: int64
+Date of Price Determination: datetime64[ns]
+Item Category in Purchasing Document: int64
+Plant: object
+Target Value for Outline Agreement in Document Currency: int64
+
+DataFrame Name: accounting_document_segment_df
+Columns:
+Client: int64
+Company Code: object
+Account Number of Vendor or Creditor: object
+Clearing Date: datetime64[ns]
+Document Number of the Clearing Document: float64
+Assignment Number: object
+Fiscal Year: int64
+Accounting Document Number: int64
+Number of Line Item Within Accounting Document: int64
+Posting Date: datetime64[ns]
+Document Date: datetime64[ns]
+Payment Date: datetime64[ns]
+Reference Document Number: object
+Document Type: object
+Debit/Credit Indicator: object
+Posting Key: object
+Baseline Date for Due Date Calculation: datetime64[ns]
+Terms of Payment Key: object
+Cash discount days 1: int64
+Cash discount days 2: int64
+Net Payment Terms Period: int64
+Cash Discount Percentage 1: int64
+Cash Discount Percentage 2: int64
+Amount Eligible for Cash Discount in Document Currency: float64
+Amount in Local Currency: float64
+Amount in Document Currency: float64
+
+DataFrame Name: document_item_invoice_receipt_df
+Columns:
+Client: int64
+Accounting Document Number: int64
+Fiscal Year: int64
+Document Item in Invoice Document: int64
+Purchasing Document Number: int64
+Item Number of Purchasing Document: int64
+Due Date for Retention: float64
+
+DataFrame Name: material_master_plant_data_df
+Columns:
+Client: int64
+Material Number: object
+Plant: object
+
+DataFrame Name: scheduling_agreement_schedule_lines_df
+Columns:
+Previous delivery date: float64
+Committed Date: object
+Purchasing Document Number: int64
+Item Number of Purchasing Document: int64
+Item Delivery Date: datetime64[ns]
+Delivery Schedule Line Counter: int64
+Loading Date: datetime64[ns]
+Client: int64
+Material Staging/Availability Date: datetime64[ns]
+Statistics-Relevant Delivery Date: datetime64[ns]
+
+DataFrame Name: vendor_master_company_code_df
+Columns:
+Client: int64
+Account Number of Vendor or Creditor: object
+Company Code: object
+Key date of the last interest calculation: float64
+Validity Date for Withholding Tax Exemption Certificate: float64
+Certification date: float64
+Date on which the Record Was Created: datetime64[ns]
+Date of the last interest calculation run: float64
+
+DataFrame Name: purchasing_info_record_df
+Columns:
+Client: int64
+Number of Purchasing Info Record: int64
+Purchasing Organization: object
+Purchasing info record category: int64
+Plant: object
+Date on Which Record Was Created: datetime64[ns]
+Purchasing Group: object
+Currency Key: object
+Amortization period to: float64
+Amortization period from: float64
+Net Price in Purchasing Info Record: float64
+Price Valid Until: object
+Item Number of Purchasing Document: int64
+Purchasing Document Number: int64
+
+DataFrame Name: vendor_master_general_section_df
+Columns:
+Client: int64
+Account Number of Vendor or Creditor: object
+Date on which the Record Was Created: datetime64[ns]
+
+DataFrame Name: purchase_requisition_df
+Columns:
+Purchase Requisition Number: int64
+Item Number of Purchase Requisition: int64
+Purchase Requisition Document Type: object
+Purchasing Document Category: object
+Requisition (Request) Date: datetime64[ns]
+Client: int64
+Purchase Order Date: datetime64[ns]
+Date of last resubmission: float64
+Committed Date: float64
+Purchase Order Number: int64
+Changed On: datetime64[ns]
+Name of Person who Created the Object: object
+Creation Indicator (Purchase Requisition/Schedule Lines): object
+Purchase Requisition Release Date: datetime64[ns]
+Item Delivery Date: datetime64[ns]
+Item Category in Purchasing Document: int64
+Processing status of purchase requisition: object
+Item Number of Purchasing Document: int64
+
+DataFrame Name: delivery_schedule_lines_df
+Columns:
+Client: int64
+Purchasing Document Number: int64
+Item Number of Purchasing Document: int64
+Confirmation Category: object
+Sequential Number of Vendor Confirmation: int64
+Delivery Date of Vendor Confirmation: datetime64[ns]
+Creation Date of Confirmation: datetime64[ns]
+Time at Which Vendor Confirmation was Created: datetime64[ns]
+
+DataFrame Name: material_master_general_section_df
+Columns:
+Client: int64
+Material Number: object
+Created On: datetime64[ns]
+Date of Last Change: datetime64[ns]
+Date from which the cross-plant material status is valid: datetime64[ns]
+Date from which the X-distr.-chain material status is valid: float64
+Product hierarchy: float64
+Deletion date: float64
+
+DataFrame Name: history_per_purchasing_document_df
+Columns:
+Client: int64
+Purchasing Document Number: int64
+Item Number of Purchasing Document: int64
+Number of Material Document: int64
+Item in Material Document: int64
+Transaction/event type, purchase order history: object
+Material Document Year: int64
+Posting Date in the Document: datetime64[ns]
+Document Date in Document: datetime64[ns]
+Day On Which Accounting Document Was Entered: datetime64[ns]
+Time of Entry: datetime64[ns]
+Name of Person who Created the Object: object
+Debit/Credit Indicator: object
+Sequential Number of Account Assignment: int64
+
+DataFrame Name: document_header_invoice_receipt_df
+Columns:
+Client: int64
+Document Number of an Invoice Document: int64
+Fiscal Year: int64
+Document Date in Document: datetime64[ns]
+Posting Date in the Document: datetime64[ns]
+Day On Which Accounting Document Was Entered: datetime64[ns]
+Planning date: float64
+Invoice Receipt Date: float64
+Tax Reporting Date: float64
+Translation Date: datetime64[ns]
+Baseline Date for Due Date Calculation: datetime64[ns]
+Date of Next Assignment Test: float64
+End Date of Assignment Test Period: float64
+
+DataFrame Name: accounting_document_header_df
+Columns:
+Client: int64
+Company Code: object
+Accounting Document Number: int64
+Fiscal Year: int64
+Document Type: object
+Document Date in Document: datetime64[ns]
+Month: int64
+Posting Date in the Document: datetime64[ns]
+Day On Which Accounting Document Was Entered: datetime64[ns]
+Invoice Document Number: int64
+Fiscal Year of Invoice: int64
+Date of the Last Document Change by Transaction: datetime64[ns]
+Reference Document Number: object
+Accounting Document Key: int64

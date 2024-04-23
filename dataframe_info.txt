@@ -1,0 +1,247 @@
+DataFrame Name: purchasing_document_header_df
+Columns:
+Date on Which Record Was Created
+Deadline for Submission of Bid/Quotation
+Purchasing Document Date
+Binding Period for Quotation
+Purchasing Document Type
+Purchasing Document Category
+Company Code
+Closing Date for Applications
+Due Date for Down Payment
+Purchasing Document Number
+Purchasing Group
+Purchasing Organization
+Delivery Date Header: All Items Have Same Delivery Date
+Name of Person who Created the Object
+Warranty Date
+Quotation Submission Date
+Start of Validity Period
+End of Validity Period
+Vendor Account Number
+Client
+Release Date of Contract
+Status of Purchasing Document
+Currency Key
+Exchange Rate
+
+DataFrame Name: vendor_master_purchasing_org_df
+Columns:
+Client
+Vendor Account Number
+Purchasing Organization
+Date on Which Record Was Created
+
+DataFrame Name: purchasing_document_item_df
+Columns:
+Reconciliation Date for Agreed Cumulative Quantity
+Purchase Requisition Number
+Item Number of Purchase Requisition
+Purchasing Document Category
+Company Code
+Purchasing Document Number
+Item Number of Purchasing Document
+Account Assignment Category
+Number of Principal Purchase Agreement
+Target Quantity
+Item Number of Principal Purchase Agreement
+Storage Location
+Client
+Material Group
+Material Number
+Purchase Order Unit of Measure
+Net Price in Purchasing Document (in Document Currency)
+Net Order Value in PO Currency
+Next JIT Delivery Schedule Transmission
+Next Forecast Delivery Schedule Transmission
+Price Unit
+Date of Price Determination
+Item Category in Purchasing Document
+Plant
+Target Value for Outline Agreement in Document Currency
+
+DataFrame Name: accounting_document_segment_df
+Columns:
+Client
+Company Code
+Account Number of Vendor or Creditor
+Clearing Date
+Document Number of the Clearing Document
+Assignment Number
+Fiscal Year
+Accounting Document Number
+Number of Line Item Within Accounting Document
+Posting Date
+Document Date
+Payment Date
+Reference Document Number
+Document Type
+Debit/Credit Indicator
+Posting Key
+Baseline Date for Due Date Calculation
+Terms of Payment Key
+Cash discount days 1
+Cash discount days 2
+Net Payment Terms Period
+Cash Discount Percentage 1
+Cash Discount Percentage 2
+Amount Eligible for Cash Discount in Document Currency
+Amount in Local Currency
+Amount in Document Currency
+
+DataFrame Name: document_item_invoice_receipt_df
+Columns:
+Client
+Accounting Document Number
+Fiscal Year
+Document Item in Invoice Document
+Purchasing Document Number
+Item Number of Purchasing Document
+Due Date for Retention
+
+DataFrame Name: material_master_plant_data_df
+Columns:
+Client
+Material Number
+Plant
+
+DataFrame Name: scheduling_agreement_schedule_lines_df
+Columns:
+Previous delivery date
+Committed Date
+Purchasing Document Number
+Item Number of Purchasing Document
+Item Delivery Date
+Delivery Schedule Line Counter
+Loading Date
+Client
+Material Staging/Availability Date
+Statistics-Relevant Delivery Date
+
+DataFrame Name: vendor_master_company_code_df
+Columns:
+Client
+Account Number of Vendor or Creditor
+Company Code
+Key date of the last interest calculation
+Validity Date for Withholding Tax Exemption Certificate
+Certification date
+Date on which the Record Was Created
+Date of the last interest calculation run
+
+DataFrame Name: purchasing_info_record_df
+Columns:
+Client
+Number of Purchasing Info Record
+Purchasing Organization
+Purchasing info record category
+Plant
+Date on Which Record Was Created
+Purchasing Group
+Currency Key
+Amortization period to
+Amortization period from
+Net Price in Purchasing Info Record
+Price Valid Until
+Item Number of Purchasing Document
+Purchasing Document Number
+
+DataFrame Name: vendor_master_general_section_df
+Columns:
+Client
+Account Number of Vendor or Creditor
+Date on which the Record Was Created
+
+DataFrame Name: purchase_requisition_df
+Columns:
+Purchase Requisition Number
+Item Number of Purchase Requisition
+Purchase Requisition Document Type
+Purchasing Document Category
+Requisition (Request) Date
+Client
+Purchase Order Date
+Date of last resubmission
+Committed Date
+Purchase Order Number
+Changed On
+Name of Person who Created the Object
+Creation Indicator (Purchase Requisition/Schedule Lines)
+Purchase Requisition Release Date
+Item Delivery Date
+Item Category in Purchasing Document
+Processing status of purchase requisition
+Item Number of Purchasing Document
+
+DataFrame Name: delivery_schedule_lines_df
+Columns:
+Client
+Purchasing Document Number
+Item Number of Purchasing Document
+Confirmation Category
+Sequential Number of Vendor Confirmation
+Delivery Date of Vendor Confirmation
+Creation Date of Confirmation
+Time at Which Vendor Confirmation was Created
+
+DataFrame Name: material_master_general_section_df
+Columns:
+Client
+Material Number
+Created On
+Date of Last Change
+Date from which the cross-plant material status is valid
+Date from which the X-distr.-chain material status is valid
+Product hierarchy
+Deletion date
+
+DataFrame Name: history_per_purchasing_document_df
+Columns:
+Client
+Purchasing Document Number
+Item Number of Purchasing Document
+Number of Material Document
+Item in Material Document
+Transaction/event type, purchase order history
+Material Document Year
+Posting Date in the Document
+Document Date in Document
+Day On Which Accounting Document Was Entered
+Time of Entry
+Name of Person who Created the Object
+Debit/Credit Indicator
+Sequential Number of Account Assignment
+
+DataFrame Name: document_header_invoice_receipt_df
+Columns:
+Client
+Document Number of an Invoice Document
+Fiscal Year
+Document Date in Document
+Posting Date in the Document
+Day On Which Accounting Document Was Entered
+Planning date
+Invoice Receipt Date
+Tax Reporting Date
+Translation Date
+Baseline Date for Due Date Calculation
+Date of Next Assignment Test
+End Date of Assignment Test Period
+
+DataFrame Name: accounting_document_header_df
+Columns:
+Client
+Company Code
+Accounting Document Number
+Fiscal Year
+Document Type
+Document Date in Document
+Month
+Posting Date in the Document
+Day On Which Accounting Document Was Entered
+Invoice Document Number
+Fiscal Year of Invoice
+Date of the Last Document Change by Transaction
+Reference Document Number
+Accounting Document Key
+
